@@ -1,7 +1,7 @@
 <h1 align="center"> Degusta Palhas </h1>
 
 <p align="center">
-  <img src="https://github.com/Ticianee/Degusta-Palhas/assets/76972629/f0a9e151-baf6-4ce0-b2a5-e132b2c94eb6"/>
+  <img src="https://github.com/Ticianee/Degusta-Palhas/assets/76972629/19607106-4468-440d-b8fc-ea1a260bb46a"/>
 </p>
 <hr>
 
