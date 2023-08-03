@@ -13,7 +13,7 @@
 
 ## Project description :page_facing_up:
 <p align="justify">
-  This website is about my micro company Degusta Palhas, that I sell Palhas Italianas, a Brazilian dessert.
+  This website is about my small business called Degusta Palhas, that me and my mother sell Palhas Italianas, a Brazilian dessert.
 </p>
 <br>
 
