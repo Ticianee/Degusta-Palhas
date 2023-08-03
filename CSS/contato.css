@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: snow;
+}
+
+section, footer {
+    padding: 54px 0;
+}
+
+h3 {
+    font-size: 50px;
+    color: #4c494a;
+}
+
+p {
+    color: #4c494a;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+/* --------------------------- MENU --------------------------- */
+.btn {
+    background-color: #0b893c;
+    color: white;
+    padding: 15px 20px; /*tamanho do botão*/
+    border-radius: 10px; /*arredonda as bordas*/
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+.btn:hover {
+    background-color: #348f57;
+}
+
+nav {
+    display: flex; /*deixa um do lado do outro*/
+    align-items: center; /*alinhar no centro no eixo y*/
+    justify-content: space-between;
+    padding-top: 30px;
+    background-color: snow;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+nav a img {
+    margin-left: 19.9rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-right: 19.84rem;
+}
+
+nav ul a {
+    color: #4c494a; /*muda a cor da letra do menu*/
+    margin: 0 25px; /*espaçamento entre o menu*/
+    text-transform: uppercase; /*tudo em letra maiuscula*/
+    font-size: 14px; /*tamanho da fonte*/
+    display: block;
+}
+
+nav ul a:not(.btn):after {
+    content: "";
+    background-color: #fc1b1b;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+              /* -------------- MENU MOBILE -------------- */
+nav .menu-icon {
+    cursor: pointer;
+    font-size: 25px;
+    color: #fc1b1b;
+    display: none; /*desaparece na versão pc*/
+    margin-right: 25px;
+}
+
+nav .close-icon {
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+/* --------------------------- end menu --------------------------- */
+
+
+
+/* --------------------------- BANNER --------------------------- */
+.banner {
+    display: flex;
+    justify-content: center; /*alinha os elementos no eixo x*/
+}
+
+.banner .banner-text {
+    margin-top: 200px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner .banner-text h1 {
+    font-size: 80px;
+    color: #4c494a; /*muda a cor da letra*/
+}
+
+.banner .banner-text p {
+    font-size: 25px;
+    color: #4c494a;
+    font-weight: lighter;
+    margin: 15px 0;
+}
+/* --------------------------- end banner --------------------------- */
+
+
+
+/* --------------------------- CONTATO --------------------------- */
+
+.contato-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.contato-info .lado-esquerdo {
+    width: 50%;
+    padding: 30px;
+    margin-right: 50px;
+    height: fit-content;
+}
+
+.contato-info .lado-esquerdo div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contato-info .lado-esquerdo div i {
+    font-size: 27px;
+    margin-right: 20px;
+    color: #fc1b1b;
+}
+
+.contato-info .lado-esquerdo p {
+    font-size: 17px;
+}
+
+.contato-info .lado-direito {
+    width: 50%;
+}
+
+.contato-info .lado-direito input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    height: 47px;
+    padding: 15px;
+    border-radius: 9px;
+    transition: 0.3s;
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    font-weight: lighter;
+}
+
+.contato-info .lado-direito input:focus, .contato-info .lado-direito textarea:focus {
+    border-color: #fd4a4a;
+}
+
+.contato-info .lado-direito textarea {
+    border: 1px solid #f1f1f1;
+    color: #212121;
+    border-radius: 9px;
+    margin-bottom: 10px;
+    padding: 15px;
+    width: 100%;
+    transition: 0.3s;
+    resize: none;
+}
+
+.contato-info .lado-direito button {
+    border: none;
+}
+
+/* --------------------------- end contato --------------------------- */
+
+
+
+/* --------------------------- MAPA --------------------------- */
+.texto h3 {
+    text-align: center;
+}
+
+.texto p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 24px 0 10px 0;
+}
+/* --------------------------- end mapa --------------------------- */
+
+
+
+
+/* --------------------------- FOOTER --------------------------- */
+.footer {
+    background-color: #fa2c2c;
+    text-align: center;
+}
+
+.footer i {
+    color: #fa2c2c;
+    font-size: 25px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.footer p {
+    margin-top: 13px;
+    color: white;
+}
+/* --------------------------- end footer --------------------------- */
+
+
+
+@media (max-width: 830px) {
+    /* menu mobile */
+    .ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #fc1b1b;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(0% at 100% 0);
+        transition: 0.7s;
+        text-align: center;
+    }
+
+    .ul.open {
+        clip-path: circle(141.4% at 100% 0);
+    }
+
+    .ul a {
+        margin: 20px;
+        margin-left: 300px;
+        font-size: 20px;
+        color: white;
+    }
+
+    nav .menu-icon {
+        display: block; /*aparece na versão mobile*/
+    }
+
+    nav .close-icon {
+        display: block;
+        position: absolute;
+        top: 83px;
+        right: 23px;
+    }
+
+    nav a img {
+        margin-left: 0.3rem;
+    }
+
+
+    /* banner responsivo */
+    .banner .banner-text {
+        padding: 0;
+        margin-top: 200px;
+    }
+
+    .banner .banner-text h1 {
+        font-size: 65px;
+    }
+    
+    .banner .banner-text p {
+        font-size: 20px;
+    }
+
+
+
+    /* contato responsivo */
+    .contato .contato-info {
+        flex-direction: column;
+    }
+    
+    .contato-info .lado-direito, .contato-info .lado-esquerdo {
+        width: 100%;
+    }
+
+    .contato-info .lado-direito {
+        margin-bottom: 30px;
+    }
+
+
+
+    /* mapa texot */
+    .texto h3 {
+        font-size: 2.3rem;
+        text-align: center;
+    }
+
+    .texto p {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}
